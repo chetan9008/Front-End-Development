@@ -1,0 +1,28 @@
+$font-weight:(
+    "bold":900,
+    "medium":700,
+    "light":500
+);
+$font-size:(
+    "small":10px,
+    "medium":20px,
+    "large":30px
+);
+$color:purple;
+$box-shadow:(
+    "first":10px,
+    "second":20px,
+    "third":30px
+);
+p 
+{
+    font-weight:map-get($font-weight,medium);
+    font-size: map-get($font-size,large);
+}
+.main
+{
+    width:100px;
+    height: 100px;
+    background: $color;
+    box-shadow: map-get($box-shadow,first) map-get($box-shadow, first) map-get($box-shadow, first) pink;
+}

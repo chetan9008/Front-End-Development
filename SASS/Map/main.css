@@ -1,0 +1,11 @@
+p {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.main {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  box-shadow: 10px 10px 10px pink;
+}/*# sourceMappingURL=main.css.map */
