@@ -1,28 +1,53 @@
-$font-weight:(
+$font-weight: (
     "bold":900,
     "medium":700,
     "light":500
 );
-$font-size:(
+$font-size: (
     "small":10px,
     "medium":20px,
     "large":30px
 );
-$color:purple;
-$box-shadow:(
+$part-height:(
+    "small":100px,
+    "medium":150px,
+    "large":250px
+);
+$color: purple;
+$color1: rgb(255, 36, 255);
+$part-1-color:red;
+$part-2-color:blue;
+$box-shadow: (
     "first":10px,
     "second":20px,
     "third":30px
 );
-p 
-{
-    font-weight:map-get($font-weight,medium);
-    font-size: map-get($font-size,large);
+
+p {
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, large);
 }
-.main
-{
-    width:100px;
+
+.main {
+    width: 100px;
     height: 100px;
     background: $color;
-    box-shadow: map-get($box-shadow,first) map-get($box-shadow, first) map-get($box-shadow, first) pink;
+    box-shadow: map-get($box-shadow, first) map-get($box-shadow, second) map-get($box-shadow, first) pink;
+}
+
+.section-1 {
+    background-color: $color1;
+    width: 100%;
+    height: 500px;
+}
+.part-1
+{
+    width: 100%;
+    height: map-get($part-height, medium );
+    background: $part-1-color;
+}
+.part-2 {
+    width: 100%;
+    background: $part-2-color;
+    height: map-get($part-height, medium);
 }

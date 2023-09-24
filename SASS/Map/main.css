@@ -7,5 +7,23 @@ p {
   width: 100px;
   height: 100px;
   background: purple;
-  box-shadow: 10px 10px 10px pink;
+  box-shadow: 10px 20px 10px pink;
+}
+
+.section-1 {
+  background-color: rgb(255, 36, 255);
+  width: 100%;
+  height: 500px;
+}
+
+.part-1 {
+  width: 100%;
+  height: 150px;
+  background: red;
+}
+
+.part-2 {
+  width: 100%;
+  background: blue;
+  height: 150px;
 }/*# sourceMappingURL=main.css.map */
