@@ -1,0 +1,32 @@
+body {
+  background-color: aqua;
+}
+
+.section-1 {
+  background-color: rgb(0, 255, 0);
+  padding: 2rem;
+}
+.section-1 h1 {
+  color: peru;
+}
+.section-1 .section-1-para {
+  color: white;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+.section-1 .section-1-para-head {
+  color: white;
+  font-size: 30px;
+}
+.section-1 .section-1-para:hover {
+  scale: 1.1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container p {
+  text-align: center;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

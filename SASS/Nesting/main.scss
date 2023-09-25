@@ -1,0 +1,50 @@
+$background: aqua;
+$background1: rgb(0, 255, 0);
+
+$font-w: (
+    "small":10px,
+    "medium":20px,
+    "large":30px
+);
+
+body {
+    background-color: $background;
+}
+
+.section-1 {
+    background-color: $background1;
+    padding: 2rem;
+
+    h1 {
+        color: peru;
+    }
+
+    // & is parent-name
+    // #{&} is complete  parent  
+    #{&}-para {
+        color: white;
+        font-size: map-get($font-w, medium);
+        transition: all .4s ease-in;
+
+        &-head {
+            color: white;
+            font-size: map-get($font-w, large);
+        }
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+        text: {
+            align: center;
+            transform: uppercase;
+        }
+    }
+}
