@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main p {
+  color: white;
+  width: 1200px;
+}/*# sourceMappingURL=main.css.map */

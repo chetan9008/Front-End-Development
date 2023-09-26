@@ -1,0 +1,24 @@
+@import './reset';
+@import "./variable";
+
+@function widthFun($value) {
+    @return map-get($width, $value );
+}
+@function timesWidth($value)
+{
+    @return $value*3;
+}
+.main {
+    background-color: $background;
+
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+
+    p {
+        color: $text-color;
+        // width: widthFun(large);
+        width:timesWidth(400px);
+    }
+}
