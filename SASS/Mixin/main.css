@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: gray;
+  margin: 30px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 10px 10px 5px white;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=main.css.map */

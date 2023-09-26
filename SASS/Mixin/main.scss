@@ -1,0 +1,51 @@
+@import './reset';
+@import './variable';
+
+@mixin displayFlex($val) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $val
+}
+
+@mixin displayGrid($val) {
+    display: grid;
+    grid-template-columns: repeat($val, 1fr);
+}
+
+@mixin darkTheme($val) {
+    @if $val {
+        background-color: $dark-color;
+        color: $light-color;
+    }
+}
+
+@mixin BoxShadow($first,$second,$third,$color)
+{
+    box-shadow: $first $second $third $color;
+}
+
+@mixin widthHeight($w,$h)
+{
+    width:$w;
+    height: $h;
+}
+.box
+{
+    background-color: gray;
+    margin:30px;
+    @include widthHeight(200px,300px );
+    @include BoxShadow(10px,10px, 5px, white);
+}
+
+.main {
+    @include displayFlex(column);
+}
+
+body {
+    @include darkTheme(true);
+}
+
+.section-1 {
+    @include displayGrid(3);
+}
