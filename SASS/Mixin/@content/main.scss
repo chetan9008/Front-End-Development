@@ -1,0 +1,70 @@
+@import './reset';
+
+@mixin displayFlex($value) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $value;
+}
+
+@mixin displayGrid($value) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin responsiveGrid {
+    @media(max-width:800px) {
+        @content;
+    }
+}
+
+@mixin responsive-1 {
+    @media(max-width:800px) {
+        @content;
+    }
+}
+
+@mixin responsive {
+    @media (max-width:800px) {
+        @content;
+    }
+}
+
+.main {
+    @include displayFlex(row);
+
+    @include responsive {
+        flex-direction: column;
+        color: purple;
+        margin: 100px;
+    }
+
+    #{&}_para:hover {
+        color: rgb(253, 0, 42);
+    }
+}
+
+.circle {
+    @include displayGrid(2);
+
+    @include responsive-1 {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    #{&}-1 {
+        @include responsive-1 {
+            border-radius: 0;
+            background: linear-gradient(rgb(255, 17, 17),
+                    rgb(0, 255, 0),
+                    rgb(16, 16, 193));
+        }
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(red, green, blue);
+    }
+}
