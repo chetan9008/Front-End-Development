@@ -1,0 +1,43 @@
+@import './reset';
+
+.main {
+    display: flex;
+
+    #{&}-para-1 {
+        color: red;
+        font-size: large;
+        font-weight: 700;
+    }
+
+    #{&}-para-1:hover {
+        color: pink;
+    }
+
+    #{&}-para-2 {
+        @extend .main-para-1;
+        font-size: medium;
+    }
+
+    #{&}-para-2:hover {
+        @extend .main-para-1;
+    }
+}
+
+.button-submit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 20px;
+
+    .button {
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: rgb(91, 91, 220);
+    }
+    .submit 
+    {
+        @extend .button;
+        background-color: greenyellow;
+    }
+}

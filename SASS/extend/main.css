@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+}
+.main .main-para-1, .main .main-para-2:hover, .main .main-para-2 {
+  color: red;
+  font-size: large;
+  font-weight: 700;
+}
+.main .main-para-1:hover, .main .main-para-2:hover {
+  color: pink;
+}
+.main .main-para-2 {
+  font-size: medium;
+}
+.button-submit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 20px;
+}
+.button-submit .button, .button-submit .submit {
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(91, 91, 220);
+}
+.button-submit .submit {
+  background-color: greenyellow;
+}/*# sourceMappingURL=main.css.map */
