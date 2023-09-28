@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: calc(100% - 200px);
+  height: 100vh;
+  background-color: blue;
+}
+
+body {
+  display: flex;
+}
+
+aside {
+  width: calc(100% - 800px);
+  height: 100vh;
+  background-color: yellow;
+}/*# sourceMappingURL=main.css.map */

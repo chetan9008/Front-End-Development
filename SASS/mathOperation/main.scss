@@ -1,0 +1,17 @@
+@import './reset';
+
+header 
+{
+    width:calc(100% - 200px);
+    height: 100vh;
+    background-color: blue;
+}
+body{
+    display: flex;
+}
+aside 
+{
+    width:calc(100% - 800px);
+    height: 100vh;
+    background-color: yellow;
+}
