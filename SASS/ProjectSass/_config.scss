@@ -7,3 +7,20 @@ $secondary-color:#ff652f;
     padding:0;
     box-sizing: border-box;
 }
+
+@mixin transition-ease
+{
+    transition: all .4s ease-in;
+}
+
+@function set-text-color($color)
+{
+    @if (lightness($color) > 40%)
+    {
+        @return #000;
+    }
+    @else 
+    {
+        @return #fff;
+    }
+}
