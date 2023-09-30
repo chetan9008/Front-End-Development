@@ -10,7 +10,7 @@ $secondary-color:#ff652f;
 
 @mixin transition-ease
 {
-    transition: all .4s ease-in;
+    transition: all .5s ease-in-out;
 }
 
 @function set-text-color($color)
