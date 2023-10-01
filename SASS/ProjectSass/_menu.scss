@@ -6,13 +6,12 @@
     height: 20px;
     width: 28px;
     cursor: pointer;
-
     @include transition-ease;
 
-    &-icon {
+    &__burger {
         position: absolute;
         right: 0;
-        top: .5rem;
+        top: 0.5rem;
         width: 28px;
         height: 3px;
         background: set-text-color($primary-color);
@@ -59,7 +58,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    opacity: .98;
+    opacity: 0.98;
     visibility: hidden;
 
     &.open {
@@ -76,11 +75,45 @@
         background: $primary-color;
         list-style-type: none;
         padding-right: 1rem;
-        transform: translateY(100%);
+        transform: translateY(-100%);
         @include transition-ease;
 
         &.open {
             transform: translateY(0);
         }
+
+        &__item {
+            transform: translateX(100vw);
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            &.active>a {
+                color: $secondary-color;
+            }
+        }
+
+        &__link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 
+{
+    .menu-nav__item:nth-child(#{$i})
+    {
+        transition-delay: ($i * .1s) + .15s;
     }
 }

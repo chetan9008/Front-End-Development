@@ -34,7 +34,7 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn-icon {
+.menu-btn__burger {
   position: absolute;
   right: 0;
   top: 0.5rem;
@@ -43,7 +43,7 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn-icon::before {
+.menu-btn__burger::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -52,7 +52,7 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn-icon::after {
+.menu-btn__burger::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -61,14 +61,14 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.menu-btn-icon.open {
+.menu-btn__burger.open {
   transform: rotate(720deg);
   background: transparent;
 }
-.menu-btn-icon.open::before {
+.menu-btn__burger.open::before {
   transform: rotate(45deg) translate(5px, 8px);
 }
-.menu-btn-icon.open::after {
+.menu-btn__burger.open::after {
   width: 28px;
   transform: rotate(-45deg) translate(3px, -7px);
 }
@@ -94,11 +94,48 @@
   background: #272727;
   list-style-type: none;
   padding-right: 1rem;
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: #ff652f;
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
 }
 
 body {

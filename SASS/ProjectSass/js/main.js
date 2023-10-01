@@ -1,26 +1,27 @@
-const Menu = document.querySelector('.menu-btn');
-const Menu_icon = document.querySelector('.menu-btn-icon');
+const menuBtn = document.querySelector('.menu-btn');
+const hamburger = document.querySelector('.menu-btn__burger');
+const nav = document.querySelector('.nav');
+const menuNav = document.querySelector('.menu-nav');
+const navItems = document.querySelectorAll('.menu-nav__item');
 
-const Nav = document.querySelector('.nav');
-const Menu_nav = document.querySelector('.menu-nav');
+let showMenu = false;
 
-let MenuStatus = false;
+menuBtn.addEventListener('click', toggleMenu);
 
-Menu_icon.addEventListener('click', toogleFunction);
+function toggleMenu() {
+    if (!showMenu) {
+        hamburger.classList.add('open');
+        nav.classList.add('open');
+        menuNav.classList.add('open');
+        navItems.forEach(item => item.classList.add('open'));
 
-function toogleFunction() {
-    if (!MenuStatus) {
-        Menu_icon.classList.add('open');
-        Nav.classList.add('open');
-        Menu_nav.classList.add('open');
+        showMenu = true;
+    } else {
+        hamburger.classList.remove('open');
+        nav.classList.remove('open');
+        menuNav.classList.remove('open');
+        navItems.forEach(item => item.classList.remove('open'));
 
-        MenuStatus = true;
-    }
-    else {
-        Menu_icon.classList.remove('open');
-        Nav.classList.remove('open');
-        Menu_nav.classList.remove('open');
-
-        MenuStatus = false;
+        showMenu = false;
     }
 }
