@@ -187,6 +187,110 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.project {
+  padding-bottom: 2rem;
+}
+.project-bio-image {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(img/model-1.jpg) center top;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.project .text-secondary {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.project-items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.project-item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.project-item img {
+  width: 100%;
+}
+.project-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.project-item:hover::after {
+  top: 0;
+  opacity: 0.8;
+}
+.project-item:hover .project-btn {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.project-btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-btn {
+  font-size: 1.2rem;
+  opacity: 0;
+  color: #fff;
+}
+.project-btn:hover {
+  scale: 1.1;
+}
+.project .social-icon {
+  display: flex;
+  flex-direction: column;
+}
+.project footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.contact {
+  height: 100%;
+  padding-top: 30vh;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(img/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contact .social-icon {
+  position: initial;
+  margin-top: 20px;
+}
+
 body {
   background-color: #272727;
   color: white;
@@ -195,7 +299,9 @@ body {
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
