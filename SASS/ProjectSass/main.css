@@ -115,7 +115,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   padding: 2rem 0;
-  font-weight: 300;
+  font-weight: 400;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -169,11 +169,13 @@
   grid-gap: 2rem;
 }
 .about .jobs-job {
-  padding: 0.5rem;
+  border-radius: 20px;
+  padding: 0.9rem;
   background-color: #414141;
   border-bottom: 5px solid #ff652f;
 }
-.about .jobs-job h2, .about .jobs-job h3 {
+.about .jobs-job h2,
+.about .jobs-job h3 {
   margin: 0.5rem 0;
 }
 .about .jobs-job h6 {
@@ -212,6 +214,7 @@
   grid-gap: 2rem;
 }
 .project-item {
+  border-radius: 20px;
   position: relative;
   border-bottom: 5px solid #ff652f;
   overflow: hidden;
@@ -291,6 +294,49 @@
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+    transition: all 0s ease-in-out;
+  }
+  .menu-btn__burger {
+    transition: all 0s ease-in-out;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about-bio {
+    font-size: 1.5rem;
+  }
+  .project .text-secondary {
+    font-size: 2rem;
+  }
+  .project .project-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contact-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 body {
   background-color: #272727;
   color: white;
