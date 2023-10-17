@@ -11975,4 +11975,52 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.menu {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+.menu li {
+  padding: 0 0.5rem;
+}
+.menu li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 700;
+}
+.menu li .active {
+  color: #fff !important;
+}
+
+.rounded-btn {
+  position: relative;
+  background: white;
+  font-weight: 700;
+  padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 575.98px) {
+  .rounded-btn {
+    display: none;
+  }
+}
+.rounded-btn span {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #9926f0;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 5px;
+}
+.rounded-btn span i {
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+.rounded-btn:hover {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: #fff;
+}
+.rounded-btn:hover span {
+  transition: all 0.4s ease-in;
+  background-color: rgba(0, 0, 0, 0.95);
 }/*# sourceMappingURL=main.css.map */

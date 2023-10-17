@@ -1,0 +1,9 @@
+@mixin gradient 
+{
+    background: linear-gradient(to right, rgba($primary, .95), rgba($secondary, .95));
+}
+
+@mixin transition-ease 
+{
+    transition:all .4s ease-in;
+}

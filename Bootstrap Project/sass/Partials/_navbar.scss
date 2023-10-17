@@ -1,0 +1,21 @@
+@import '../Component/mixin';
+
+.menu {
+    @include gradient;
+    
+    li {
+        padding: 0 .5rem;
+
+        a {
+            color: rgba($white,.80)!important;
+            font-weight: 700;
+            
+        }
+                .active {
+                    color: $white !important;
+                }
+    }
+
+    
+
+}
