@@ -1,0 +1,31 @@
+@keyframes pulse-border {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 1.5;
+        opacity: 0;
+    }
+}
+
+.border-animation
+{
+    position: absolute;
+    width:6rem;
+    height:6rem;
+    top:0;
+    left:0;
+    border:.55rem solid $white;
+    border-radius: 50%;
+    animation: pulse-border 1.5s linear infinite;
+    &--1 
+    {
+        animation-delay: 1s;
+    }
+    &--2 
+    {
+        animation-delay:1.5s;
+    }
+}

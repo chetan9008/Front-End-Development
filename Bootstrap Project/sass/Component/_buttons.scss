@@ -5,10 +5,10 @@
     padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
     border: 0.1rem solid rgba($white, 0.6);
 
-    @include media-breakpoint-down(sm)
-    {
-        display:none;
-    }
+    // @include media-breakpoint-down(sm)
+    // {
+    //     display:none;
+    // }
     span {
         position: absolute;
         width: 2.5rem;

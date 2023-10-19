@@ -1,0 +1,41 @@
+.intro {
+    padding-top: 10rem;
+    @include gradient;
+
+    .intros {
+        h1 {
+            @include media-breakpoint-up(lg)
+            {
+                font-size:4.5rem
+            }
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            @include media-breakpoint-up(lg)
+            {
+                font-size:1.4rem;
+            }
+            margin-top: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .video-box {
+        position: relative;
+        a {
+            span {
+                    i 
+                    {
+                        font-size:6rem;
+                        color:$secondary;
+                    }
+                }
+        }
+    }
+}

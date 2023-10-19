@@ -1,6 +1,8 @@
 @import './custom';
 
-
+@import './Component/mixin';
+@import './Component/animation';
+@import './Component/buttons';
 @import './Partials/faq';
 @import './Partials/first_section';
 @import './Partials/footer';
@@ -10,6 +12,3 @@
 @import './Partials/testimonial';
 @import './Partials/work';
 
-@import './Component/animation';
-@import './Component/buttons';
-@import './Component/mixin';

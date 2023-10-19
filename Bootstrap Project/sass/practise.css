@@ -1,0 +1,11 @@
+@keyframes pulse-border {
+    0%{
+        scale:1;
+        opacity: 0;
+    }
+    100%
+    {
+        scale:1.2;
+        opacity: 1;
+    }
+}
