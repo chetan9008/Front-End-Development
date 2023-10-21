@@ -1,9 +1,35 @@
-@mixin gradient 
-{
+@mixin gradient {
     background: linear-gradient(to right, rgba($primary, .95), rgba($secondary, .95));
 }
 
-@mixin transition-ease 
+@mixin transition-ease {
+    transition: all .4s ease-in;
+}
+
+.heading-line::before {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: .1rem;
+    background: $primary;
+    margin: 0 auto;
+}
+
+.heading-line::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: .5rem;
+    background: $primary;
+    margin: 0 auto;
+}
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.border-right 
 {
-    transition:all .4s ease-in;
+    border-right:.1rem solid $gray-300;
+    height: 100%;
 }
