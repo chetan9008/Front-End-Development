@@ -26,10 +26,18 @@
 
 .display-3 {
     font-family: 'Poppins', sans-serif;
+
+    &_title {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        background: -webkit-linear-gradient(right,$primary,$secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+    }
 }
 
-.border-right 
-{
-    border-right:.1rem solid $gray-300;
+.border-right {
+    border-right: .1rem solid $gray-300;
     height: 100%;
 }

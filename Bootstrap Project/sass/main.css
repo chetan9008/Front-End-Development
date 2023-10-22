@@ -11997,6 +11997,14 @@ textarea.form-control-lg {
 .display-3 {
   font-family: "Poppins", sans-serif;
 }
+.display-3_title {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(right, #9926f0, #d122e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
 
 .border-right {
   border-right: 0.1rem solid #dee2e6;
@@ -12114,6 +12122,14 @@ textarea.form-control-lg {
 .display-3 {
   font-family: "Poppins", sans-serif;
 }
+.display-3_title {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(right, #9926f0, #d122e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
 
 .border-right {
   border-right: 0.1rem solid #dee2e6;
@@ -12132,6 +12148,26 @@ textarea.form-control-lg {
 }
 .menu li .active {
   color: #fff !important;
+}
+
+.services-content {
+  padding-top: 2rem;
+}
+@media (min-width: 992px) {
+  .services-content {
+    padding-top: 5rem;
+  }
+}
+.services-content .icon {
+  color: #9926f0;
+  font-size: 2.5rem;
+}
+.services-img {
+  margin-top: 2rem;
+}
+
+.testimonials {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
 
 .company_box {

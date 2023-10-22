@@ -9,3 +9,10 @@
         opacity: 1;
     }
 }
+
+body 
+{
+    background: red;
+    background-clip: text;
+    background: linear-gradient(to right,red,blue);
+}
