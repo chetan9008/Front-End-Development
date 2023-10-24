@@ -1,4 +1,44 @@
 .testimonials 
 {
+    position:relative;
     @include gradient;
+
+    &_box 
+    {
+        background:rgba($white,.80);
+        padding: 2rem 1.25rem;
+        text-align: center;
+        border-radius:10px;
+        color:$black;
+        i {
+            color:rgba($primary,.7);
+            font-size:1.5rem;
+        }
+        .rating{
+            margin-top:10px;
+            i{
+            color:rgba($primary,.7);
+            font-size:1rem;
+            }
+        }
+    }
+
+    &_img 
+    {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img 
+        {
+            border:0.325rem solid rgba($primary,.7);
+        }
+    }
+
+    &_intro 
+    {
+        text-align:center;
+        padding-top:3.5rem;
+    }
 }

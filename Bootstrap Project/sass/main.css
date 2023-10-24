@@ -12167,7 +12167,40 @@ textarea.form-control-lg {
 }
 
 .testimonials {
+  position: relative;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+.testimonials_box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem 1.25rem;
+  text-align: center;
+  border-radius: 10px;
+  color: #000;
+}
+.testimonials_box i {
+  color: rgba(153, 38, 240, 0.7);
+  font-size: 1.5rem;
+}
+.testimonials_box .rating {
+  margin-top: 10px;
+}
+.testimonials_box .rating i {
+  color: rgba(153, 38, 240, 0.7);
+  font-size: 1rem;
+}
+.testimonials_img {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonials_img img {
+  border: 0.325rem solid rgba(153, 38, 240, 0.7);
+}
+.testimonials_intro {
+  text-align: center;
+  padding-top: 3.5rem;
 }
 
 .company_box {
