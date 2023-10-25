@@ -12216,4 +12216,46 @@ textarea.form-control-lg {
 }
 .company_box img:hover {
   filter: grayscale(120);
+}
+
+.work {
+  margin-top: 8.5rem;
+}
+.work-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+.work-box img {
+  width: 100%;
+  height: 100%;
+}
+.work-box .work-intro {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 38, 240, 0.75);
+  position: absolute;
+  display: none;
+}
+.work-box .work-intro .caption {
+  transition: all 0.4s ease-in;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-box:hover .work-intro {
+  transition: all 0.4s ease-in;
+  display: block;
+}
+.work-box:hover img {
+  transition: all 0.4s ease-in;
+  scale: 1.5;
 }/*# sourceMappingURL=main.css.map */

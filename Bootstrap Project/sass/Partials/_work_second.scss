@@ -1,0 +1,50 @@
+.work 
+{
+    margin-top:8.5rem;
+
+    &-box 
+    {
+        position:relative;
+        width:100%;
+        height:18.5rem;
+        overflow:hidden;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        img 
+        {
+            width:100%;
+            height:100%;
+        }
+        .work-intro 
+        {
+
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            background-color:rgba($primary, .75);
+            position:absolute;
+            display:none;
+            .caption
+            {
+            @include transition-ease;
+            color:$white;
+            text-align: center;
+            @include absoluteCenter;
+            }
+        }
+        &:hover 
+        {
+            .work-intro
+            {
+            @include transition-ease;
+            display:block;
+            }
+            img 
+            {
+                @include transition-ease;
+                scale: 1.5;
+            }
+        }
+    }
+}
