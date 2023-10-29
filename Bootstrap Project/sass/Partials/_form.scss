@@ -1,0 +1,49 @@
+.contact {
+    background-color: $gray-200;
+    padding: 4rem 0;
+
+    &-section {
+        &-1 {
+            @include gradient;
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+
+            @include media-breakpoint-up(md) {
+                padding-top: 5rem;
+                padding-right: 4rem;
+                padding-left: 4rem;
+                padding-bottom: 2rem;
+            }
+
+            .contact-section-list {
+                position: relative;
+                list-style-type: none;
+                display: block;
+                padding-top: 0.5rem;
+                padding-left: 0.5rem;
+                margin-bottom: 0.7rem;
+
+                li::before {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f00c";
+                    font-weight: 700;
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        &-2 {
+            background: $white;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+
+            @include media-breakpoint-up(md) {
+                padding-top: 5rem;
+                padding-right: 4rem;
+                padding-left: 4rem;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
