@@ -12101,6 +12101,58 @@ textarea.form-control-lg {
   color: #d122e3;
 }
 
+.footer {
+  background-color: #151414;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover {
+  color: #9926f0;
+}
+.footer_first svg {
+  width: 4rem;
+  stroke: #9926f0;
+}
+@media (max-width: 767.98px) {
+  .footer_first svg {
+    width: 2rem;
+  }
+}
+.footer_first a {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .footer_first a {
+    font-size: 1rem;
+  }
+}
+.footer_first p {
+  color: #6c757d;
+}
+.footer_second {
+  background: #212121;
+}
+.footer_second i {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+.footer_third .footer-list li {
+  margin-left: -2rem;
+  margin-bottom: 0.4rem;
+}
+.footer_forth {
+  background-color: #000;
+}
+.footer_forth a {
+  text-decoration: none;
+}
+.footer_forth a:hover {
+  text-decoration: underline;
+}
+
 .contact {
   background-color: #e9ecef;
   padding: 4rem 0;
