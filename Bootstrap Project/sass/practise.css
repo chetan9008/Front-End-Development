@@ -15,4 +15,6 @@ body
     background: red;
     background-clip: text;
     background: linear-gradient(to right,red,blue);
+    align-items: center;
+    justify-content: center;
 }
