@@ -1,1 +1,96 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.detail-container {
+
+    width: 30rem;
+    background: linear-gradient(to right, #e6407b, white);
+    margin-top: 20px;
+    border: 2px solid #e6407b;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        padding: .2rem;
+        margin-left: 0px;
+    }
+
+    padding: 1rem;
+    border-radius: 100px;
+    margin-left: 20px;
+
+    .text-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-round .img-fluid {
+        @include media-breakpoint-down(sm) {
+            display: none;
+            width: 20%;
+            margin-top: 50px;
+        }
+
+        border-radius: 60px;
+    }
+
+    .special-text {
+        margin-right: 20px;
+        background: -webkit-linear-gradient(left, purple, hotpink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.snapchat {
+    background: linear-gradient(to right, white, yellow);
+    border: 2px solid yellow;
+
+    // padding: 2rem;
+    .img-round .img-fluid {
+        border-radius: 100px;
+        border: 10px solid yellow;
+    }
+
+    .special-text {
+        margin-right: 20px;
+        background: -webkit-linear-gradient(left, yellow, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.phone-number {
+    background: linear-gradient(to right, #3eba2e, white);
+    border: 2px solid #3eba2e;
+
+    .img-round .img-fluid {
+        border-radius: 150px;
+    }
+
+    .special-text {
+        margin-right: 20px;
+        background: -webkit-linear-gradient(left, #3eba2e, rgb(1, 77, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.person {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 10rem;
+        border-radius: 50%;
+    }
+}
+
+body {
+    height: 100vh;
+    background: url('../images/instagram.jpg') no-repeat center center/ cover;
+}
+
+a{
+    text-decoration: none;
+}

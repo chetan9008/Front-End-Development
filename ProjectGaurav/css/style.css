@@ -9287,3 +9287,71 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+.detail-container {
+  width: 30rem;
+  background: linear-gradient(to right, #e6407b, white);
+  margin-top: 20px;
+  border: 2px solid #e6407b;
+  padding: 1rem;
+  border-radius: 100px;
+  margin-left: 20px; }
+  @media (max-width: 575.98px) {
+    .detail-container {
+      width: 100%;
+      padding: .2rem;
+      margin-left: 0px; } }
+  .detail-container .text-container {
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .detail-container .img-round .img-fluid {
+    border-radius: 60px; }
+    @media (max-width: 575.98px) {
+      .detail-container .img-round .img-fluid {
+        display: none;
+        width: 20%;
+        margin-top: 50px; } }
+  .detail-container .special-text {
+    margin-right: 20px;
+    background: -webkit-linear-gradient(left, purple, hotpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.snapchat {
+  background: linear-gradient(to right, white, yellow);
+  border: 2px solid yellow; }
+  .snapchat .img-round .img-fluid {
+    border-radius: 100px;
+    border: 10px solid yellow; }
+  .snapchat .special-text {
+    margin-right: 20px;
+    background: -webkit-linear-gradient(left, yellow, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.phone-number {
+  background: linear-gradient(to right, #3eba2e, white);
+  border: 2px solid #3eba2e; }
+  .phone-number .img-round .img-fluid {
+    border-radius: 150px; }
+  .phone-number .special-text {
+    margin-right: 20px;
+    background: -webkit-linear-gradient(left, #3eba2e, #014d01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.person {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .person img {
+    width: 10rem;
+    border-radius: 50%; }
+
+body {
+  height: 100vh;
+  background: url("../images/instagram.jpg") no-repeat center center/cover; }
+
+a {
+  text-decoration: none; }
