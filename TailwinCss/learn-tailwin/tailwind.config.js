@@ -6,6 +6,21 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    spacing: {
+      1: "20px",
+      2: "40px",
+      3: "50px",
+      4: "60px",
+      5: "70px",
+      6: "200px",
+      10:"400px",
+    },
     extend: {
       colors: {
         nilla: "#0556f3",
